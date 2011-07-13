@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Options</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Key</key>
+			<string>mail_label_style</string>
+			<key>Title</key>
+			<string>Style</string>
+			<key>DefaultValue</key>
+			<real>0</real>
+			<key>Titles</key>
+			<array>
+				<string>Small Squares</string>
+				<string>Big Rectangles</string>
+				<string>Small Circles</string>
+				<string>Small Circles Right</string>
+				<string>Colored Date</string>
+				<string>Colored Date Block</string>
+				<string>Shaded Background</string>
+				<string>Small Squares Right</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<real>0</real>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Enable Mailbox Text Color</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>main_mailbox_color_lbl</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Enable Aliases</string>
+			<key>DefaultValue</key>
+			<false/>
+			<key>Key</key>
+			<string>main_mailbox_color_aliases</string>
+		</dict>
+	</array>
+</dict>
+</plist>
