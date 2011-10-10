@@ -1,0 +1,12 @@
+Package: com.unlimapps.maillabels
+Name: Color Mail Labels
+Version: 1.0-26
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, firmware (>= 4.0), preferenceloader
+Description:Color Mail Labels is a tweak that allows you to customize the way you view your email accounts. It allows you to give each account its own color-just as you can in gmail!
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=colormaillabelsData
+Sponsor: thebigboss.org <http://thebigboss.org>
+Maintainer: Enea Gjoka <UnlimApps@yahoo.com>
+Author: Enea Gjoka <UnlimApps@yahoo.com>
+Section: Utilities
+Tag: cydia::commercial, purpose::extension

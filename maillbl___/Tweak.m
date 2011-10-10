@@ -1,6 +1,7 @@
 #import <CaptainHook/CaptainHook.h>
 #import <UIKit/UIKit.h>
 #import <SpringBoard/SpringBoard.h>
+#import "ExampleCell.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Foundation/Foundation.h>
 
@@ -11,6 +12,7 @@
 CHDeclareClass(MailboxContentViewCell);
 CHDeclareClass(MailboxPickerController);
 CHDeclareClass(MailboxContentViewController);
+CHDeclareClass(ML3MusicLibraryImpl);
 
 @interface OutboxTableCell : NSObject
 @end
@@ -368,6 +370,12 @@ CHMethod(2, id, MailboxContentViewController,tableView,id,fp8,cellForRowAtIndexP
 	return cell;
 }
 
+CHMethod(2, id, ML3MusicLibraryImpl,insertItemFromPurchaseFolder,id,purchaseFolder,withItemProperties,id,itemProperties)
+{	
+	id *cell = CHSuper(2,ML3MusicLibraryImpl,insertItemFromPurchaseFolder,purchaseFolder,withItemProperties,itemProperties);
+	CHLog(@"This was actually called YAY!");
+	return cell;
+}
 
 CHConstructor
 {		
@@ -381,5 +389,8 @@ CHConstructor
 	
 	CHLoadLateClass(MailboxContentViewController);
 	CHHook(2, MailboxContentViewController, tableView,cellForRowAtIndexPath);
+	
+	CHLoadLateClass(ML3MusicLibraryImpl);
+	CHHook(2, ML3MusicLibraryImpl, insertItemFromPurchaseFolder,withItemProperties);
 
 }

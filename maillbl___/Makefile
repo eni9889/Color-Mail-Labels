@@ -4,10 +4,9 @@ all clean package install::
 	./framework/git-submodule-recur.sh init
 	$(MAKE) $(MAKEFLAGS) MAKELEVEL=0 $@
 else
-GO_EASY_ON_ME=1
 
 TWEAK_NAME = maillbl
-maillbl_OBJC_FILES = Tweak.m
+maillbl_OBJC_FILES = Tweak.m ExampleCell.m TISwipeableTableView.m
 maillbl_FRAMEWORKS = UIKit QuartzCore Foundation CoreGraphics
 
 include framework/makefiles/common.mk

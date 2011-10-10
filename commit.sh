@@ -1,4 +1,4 @@
-#cd /Users/egjoka/Documents/Projects/UnlimVideos/
+cd "`dirname $0`"
 git add .
 git commit -m "$1"
 git push origin master
