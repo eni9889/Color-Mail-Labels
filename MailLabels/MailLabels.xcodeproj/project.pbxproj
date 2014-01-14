@@ -64,6 +64,7 @@
 		476411641338322B00033104 /* doneBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 476411631338322B00033104 /* doneBtn.png */; };
 		4764127B133EE1D800033104 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 4764127A133EE1D800033104 /* UIColor-Expanded.m */; };
 		4764127E133EE24D00033104 /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4764127C133EE24D00033104 /* UIColor-HSVAdditions.m */; };
+		47AED30C16CC19DB00532BCE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AED30B16CC19DB00532BCE /* Default-568h@2x.png */; };
 		E204DB5F12ADC1820063A748 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E204DB5E12ADC1820063A748 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E24E6A4711E532710082E0CD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E24E6A4611E532710082E0CD /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E29038CF129458D800E90AEC /* selectiongradient.png in Resources */ = {isa = PBXBuildFile; fileRef = E29038CE129458D800E90AEC /* selectiongradient.png */; };
@@ -160,6 +161,7 @@
 		4764127A133EE1D800033104 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
 		4764127C133EE24D00033104 /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
 		4764127D133EE24D00033104 /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
+		47AED30B16CC19DB00532BCE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MailLabels-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MailLabels-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E204DB5E12ADC1820063A748 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E24E6A4611E532710082E0CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -208,6 +210,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				47AED30B16CC19DB00532BCE /* Default-568h@2x.png */,
 				4764105313381A2000033104 /* ColorPicker */,
 				47641029133819F300033104 /* AboutScreenView.xib */,
 				4764113C13382E1100033104 /* ColorPickerViewController.xib */,
@@ -492,6 +495,7 @@
 				476411641338322B00033104 /* doneBtn.png in Resources */,
 				47474CC6133F0678000F5397 /* 13-plus.png in Resources */,
 				47474CC7133F0678000F5397 /* 13-plus@2x.png in Resources */,
+				47AED30C16CC19DB00532BCE /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,13 +544,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MailLabels_Prefix.pch;
 				INFOPLIST_FILE = "MailLabels-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = MailLabels;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -554,12 +561,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MailLabels_Prefix.pch;
 				INFOPLIST_FILE = "MailLabels-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = MailLabels;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
